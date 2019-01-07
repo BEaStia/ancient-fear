@@ -114,6 +114,7 @@ RSpec.describe LobbiesController, type: :controller do
       it 'updates the requested lobby' do
         headers = { 'Accept' => 'application/json', 'Content-Type' => 'application/json' }
         auth_headers = Devise::JWT::TestHelpers.auth_headers(headers, user)
+        p auth_headers
         request.headers.merge! auth_headers
 
         lobby = Lobby.create! valid_attributes

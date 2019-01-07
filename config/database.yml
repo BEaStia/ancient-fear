@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: ancient-fear_production
-  username: ancient-fear
-  password: <%= ENV['ANCIENT-FEAR_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>

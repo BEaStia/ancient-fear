@@ -26,6 +26,9 @@ gem 'devise'
 gem 'devise-jwt', '~> 0.5.8'
 gem 'omniauth'
 
+# Deployment
+gem 'rollbar'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
